@@ -1,0 +1,57 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Değirmen</title>
+    <link rel="stylesheet" href="{% static 'css/css.css' %}">
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row row-cols-1">
+            <div class="col text-center mb-4">
+                <p class="h1 mb-0 brand text-primary">
+                    <a href="#" class="text-decoration-none">DEĞİRMEN</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropzone Örneği</title>
+    <!-- Dropzone CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.2/min/dropzone.min.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <h3 class="mb-4">Dosya Bırakma Alanı</h3>
+            <form action="#" class="dropzone" id="myDropzone"></form>
+        </div>
+    </div>
+</div>
+
+<!-- Dropzone JavaScript dosyasını yükleme -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.2/min/dropzone.min.js"></script>
+
+<script>
+    // Dropzone özelliklerini yapılandırma
+    Dropzone.options.myDropzone = {
+        maxFilesize: 2, // Maksimum dosya boyutu (MB)
+        acceptedFiles: ".jpeg,.jpg,.png,.gif", // Kabul edilen dosya türleri
+    };
+</script>
+
+</body>
+</html>

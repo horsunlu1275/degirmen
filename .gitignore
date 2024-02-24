@@ -1,0 +1,50 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches and logs
+*.log
+logs/
+*.sqlite3
+
+# Static files
+/staticfiles/
+
+# Media
+/media/
+
+# Secret keys
+*.secret_key
+
+# Development environment settings
+.env
+
+# macOS
+.DS_Store
+
+# Visual Studio Code
+.vscode/
+
+# Python
+*.pyc
+*.pyo
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Virtual environment
+venv/
+env/
+
+# Heroku
+*.heroku/
+*.env
+
+# IDE (PyCharm)
+.idea/
+*.iml
+
+# Dependency directories
+node_modules/
+bower_components/

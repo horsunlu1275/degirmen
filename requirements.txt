@@ -1,0 +1,4 @@
+pyth3
+six
+pdf2docx
+django

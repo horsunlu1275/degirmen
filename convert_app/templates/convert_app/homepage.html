@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Değirmen</title>
+     
+    <link rel="stylesheet" href="{% static 'css/dropzone.css' %}">
+    <link rel="stylesheet" href="{% static 'css/css.css' %}">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.9.2/min/dropzone.min.js"></script> -->
+    
+    
+    
+    
+</head>
+<body>
+    <div class="container my-5">
+        <div class="row row-cols-1">
+            <div class="col text-center mb-4">
+                <p class="h1 mb-0 brand text-primary">
+                    <a href="#" class="text-decoration-none">DEĞİRMEN</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h3 class="mb-4 text-center">dosya bırakma alanı</h3>
+                <form action="{% url 'homePage' %}" method="post" enctype="multipart/form-data" class="dropzone" aria-placeholder="deneme" id="myDropzone">
+                    {% csrf_token %}
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="{% static 'js/dropzone.js' %}"></script>
+</body>
+</html>
+
+
+
