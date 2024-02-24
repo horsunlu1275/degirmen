@@ -24,9 +24,9 @@
             </div>
         </div>
     </div>
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-6 offset-md-3">
+    <div class="container-fluid mt-5">
+        <div class="row ">
+            <div class="col-md-8 offset-md-2">
                 <h3 class="mb-4 text-center">dosya bırakma alanı</h3>
                 <form action="{% url 'homePage' %}" method="post" enctype="multipart/form-data" class="dropzone" aria-placeholder="deneme" id="myDropzone">
                     {% csrf_token %}
@@ -35,7 +35,15 @@
         </div>
     </div>
 
-
+    <div class="btn-group">
+        <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Large button
+        </button>
+        <ul class="dropdown-menu">
+          ...
+        </ul>
+      </div>
+      
     <script src="{% static 'js/dropzone.js' %}"></script>
 </body>
 </html>

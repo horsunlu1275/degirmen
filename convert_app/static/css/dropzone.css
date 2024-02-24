@@ -39,9 +39,11 @@
 
 .dropzone {
   min-height: 150px;
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  min-width: 50rem;
+  border: 5px solid rgba(0, 0, 0, 0.8);
   border-radius: 5px;
   padding: 20px 20px;
+  margin-left:1px;
 }
 .dropzone.dz-clickable {
   cursor: pointer;
