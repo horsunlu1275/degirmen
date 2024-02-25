@@ -28,7 +28,7 @@
         <div class="row ">
             <div class="col-md-8 offset-md-2">
                 <h3 class="mb-4 text-center">dosya bırakma alanı</h3>
-                <form action="{% url 'homePage' %}" method="post"  class="dropzone" aria-placeholder="deneme" id="myDropzone">
+                <form action="{% url 'homePage' %}" method="post" enctype="multipart/form-data" class="dropzone" aria-placeholder="deneme" id="myDropzone">
                     {% csrf_token %}
                 </form>
             </div>
