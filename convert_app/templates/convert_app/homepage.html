@@ -28,9 +28,31 @@
         <div class="row ">
             <div class="col-md-8 offset-md-2">
                 <h3 class="mb-4 text-center">dosya bırakma alanı</h3>
-                <form action="{% url 'homePage' %}" method="post" enctype="multipart/form-data" class="dropzone" aria-placeholder="deneme" id="myDropzone">
+                <form action="{% url 'homePage' %}" method="post"  class="dropzone" aria-placeholder="deneme" id="myDropzone">
                     {% csrf_token %}
                 </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h4 class="mb-3 text-center">Dosya Bilgisi ve Dönüştürme Seçenekleri</h4>
+                <div>
+                    <strong>Dosya Adı:</strong> {{ file_name }}<br>
+                    <strong>Dosya Uzantısı:</strong> {{ file_extension }}<br>
+                </div>
+                <div>
+                    <strong>Dönüştürme Seçenekleri:</strong><br>
+                    
+                        <ul>
+                            {% for option in conversion_options %}
+                                <li>{{ option }}</li>
+                            {% endfor %}
+                        </ul>
+                    
+                </div>
             </div>
         </div>
     </div>
